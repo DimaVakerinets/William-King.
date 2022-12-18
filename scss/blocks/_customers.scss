@@ -1,0 +1,67 @@
+
+.customers {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+
+.cos {
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    gap: 26px;
+    justify-items: center;
+    @include desktop-small  {
+        display: grid;
+        grid-template-columns: 1fr ;
+        flex-direction: column;
+
+    }
+    
+}
+.customers-block {
+    
+    width: 557px;
+    background:$color-dark2;
+    border-radius: 8px;
+    padding: 32px ;
+    @include tablet-small {
+        display: grid;
+        grid-template-columns: 1fr ;
+        flex-direction: column;
+
+    }
+
+    &__desc {
+       max-width: 493px;
+       
+       
+       
+
+    }
+}
+
+
+
+.customers-man {
+   display: flex;
+   
+   
+    
+
+    &__title {
+        @include text ($font,500,18px,160%,$color-white );
+        
+       
+        
+    }
+
+    &__subtitle {
+        @include text ($font,500,18px,160%,$color-primary );
+        
+    }
+
+    
+}
+
+
+

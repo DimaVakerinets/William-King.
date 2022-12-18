@@ -1,0 +1,21 @@
+.portfolio {
+    margin-top: 90px;
+    
+    &__photo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 26px;
+        margin-bottom: 90px;
+        border-radius: 8px;
+        justify-items: stretch;
+            
+        @include desktop-small  {
+            display: grid;
+            grid-template-columns: 1fr ;
+            flex-direction: column;
+            justify-items: stretch;
+            
+            
+        }
+    }
+}

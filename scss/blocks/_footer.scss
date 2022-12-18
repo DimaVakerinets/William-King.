@@ -1,0 +1,32 @@
+.footer {
+    
+    background-color: $color-dark2;
+    display: flex;
+    height: 126px;
+    
+}
+
+.footer-text {
+    @include text ($font,400,16px,19px,$color-white );
+    align-items: center;
+    span {
+        color: $color-primary;
+     } 
+    
+}
+.ft {
+    display: flex;
+    gap: 34px;
+}
+
+.footer-item {
+    padding: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include desktop-small {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}

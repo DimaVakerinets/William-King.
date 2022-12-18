@@ -1,0 +1,73 @@
+.pricing {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    
+
+    &__text {
+        @include text ($font,500,16px,19px,$color-white );
+        margin-bottom: 14px;
+   
+    }
+
+    &__title {
+        @include text ($font,500,44px,52px,$color-white );
+    }
+
+    &__item {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 21px
+
+    }
+
+    &__subtitle {
+        @include text ($font,500,16px,19px,$color-subtitle);
+                        
+    }
+
+    &__desc {
+        width: 299px;
+        margin-bottom: 35px;
+        @include text ($font,500,16px,19px,$color-body);
+    }
+}
+
+.pricing-card {
+    padding: 32px;
+    width: 363px;
+    background:$color-dark2;
+    border-radius: 8px;
+    
+}
+
+.btn {
+}
+.pricing{
+
+    &__btn {
+        margin-top: 35px;
+        background:$color-primary;
+        border-radius:$radius-btn;
+        @include text ($font,500,16px,19px,$color-white );
+        align-items: center;
+        padding: 13px 18px;
+        border: 0;
+        cursor: pointer;
+        outline: 0;
+        transition: $transition;
+        &:hover {
+            background: $color-body;
+            color: black;
+        }
+    }
+}
+.pr {
+    display: flex;
+    gap: 26px;
+    @include desktop-small {
+        flex-direction: column;
+        align-items: center;
+    }
+}
