@@ -2,6 +2,7 @@
 .customers {
     margin-top: 90px;
     margin-bottom: 90px;
+    
 }
 
 
@@ -10,14 +11,36 @@
     grid-template-columns: 1fr 1fr  ;
     gap: 26px;
     justify-items: center;
-    @include desktop-small  {
+    @include desktop-small {
         display: grid;
         grid-template-columns: 1fr ;
         flex-direction: column;
+    
 
     }
     
 }
+
+
+.customers-man {
+    gap: 20px;
+}
+.ellipse {
+    margin-top: 28px;
+    width: 71px;
+    height: 71px;
+    
+}
+
+
+.cust-item {
+    
+    flex-direction: column;
+    
+    
+    
+}
+
 .customers-block {
     
     width: 557px;
@@ -32,12 +55,20 @@
     }
 
     &__desc {
+        @include text ($font,400,18px,160%,$color-white );
        max-width: 493px;
-       
-       
-       
-
+       display: flex;
+       align-items: center;
+       align-self: stretch;
+          
     }
+
+    &__info {
+        @include desktop-small {
+            text-align: center;
+        }
+    }
+
 }
 
 

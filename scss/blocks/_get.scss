@@ -1,27 +1,52 @@
 .get {
     margin-top: 90px;
     margin-bottom: 90px;
-}
-
-
-    
-
-.field {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 20px;
-    background:$color-get;
-    border-radius: 10px;
-    padding: 12px;
-    letter-spacing: 0.01em;
-    border: 0;
-    outline: 0;
-    &::placeholder {
-        color: $color-body;
+    @include desktop-small {
+        flex-direction: column;
+        
     }
-    
-    
 }
+
+
+    .input {
+        
+        background: $color-get;
+        outline: 0;
+        border-radius: 8px;
+        border:1px solid rgba(255, 255, 255, 0.15);
+        width: 1140px;
+        margin-bottom: 20px;
+        bottom: 30px;
+        padding: 25px;
+        color: $color-white;
+        border-radius: $color-white;
+        &::placeholder {
+            color: $color-body;
+        }
+        
+        
+
+    }
+
+
+ .textarea {
+    background: $color-get;
+        outline: 0;
+        border-radius: 8px;
+        border:1px solid rgba(255, 255, 255, 0.15);
+        width: 1140px;
+        margin-bottom: 20px;
+        bottom: 30px;
+        padding: 25px;
+        color: $color-white;
+        border-radius: $color-white;
+        &::placeholder {
+            color: $color-body;
+            align-items: center;
+        }
+        
+ }   
+
 .btn {
     margin-bottom: 90px;
 }
